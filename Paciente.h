@@ -4,10 +4,11 @@
  * Autor: Allan Mauricio Brenes castro
  * 
  * Fecha de creación: 08/06/2024
+ * Fecha de última modificación: 11/06/2024
 */
 
-#include "Dentista.h"
-#include "Cita.h"
+#ifndef _Paciente_h
+#define _Paciente_h
 
 #include <string>
 #include <vector>
@@ -20,16 +21,16 @@ class Paciente
     private:
     string nombre;
     int edad;
-    Dentista dentista;
     vector<string> tratamientosAnteriores;
     vector<string> alergias;
     vector<string> notasGenerales;
-    vector<Cita> citasAnteriores;
 
     public:
     // Constructores para las clases
+    Paciente();
     Paciente(string nombre, int edad);
-    Paciente(string nombre, int edad);
-    // Función prueba de constructores
+    // Función para imprimir un paciente
     void imprimirPaciente();
 };
+
+#endif

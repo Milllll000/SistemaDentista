@@ -4,9 +4,14 @@
  * Autor: Allan Mauricio Brenes castro
  * 
  * Fecha de creación: 08/06/2024
+ * Fecha de última modificación: 11/06/2024
 */
 
+#ifndef _Cita_h
+#define _Cita_h
+
 #include <string>
+#include "Paciente.h"
 
 class Cita
 {
@@ -20,3 +25,5 @@ class Cita
     // Constructores
     Cita(Paciente paciente, string tratamientoDental, string fecha);
 };
+
+#endif
