@@ -13,25 +13,21 @@
 using namespace std;
 
 // Cuando es un paciente nuevo que no ha tenido algún tratamiento con ningún dentista
-Paciente::Paciente(string nombre, int edad, string alergias)
+Paciente::Paciente(string nombre, int edad)
 {
     this->nombre = nombre;
 
     this->edad = edad;
-
-    this->alergias.push_back(alergias);
 }
 
 // Cuando es un paciente nuevo que ha tenido tratamientos anteriores con algún dentista
-Paciente::Paciente(string nombre, int edad, string alergias, string tratamientosAnteriores)
+Paciente::Paciente(string nombre, int edad)
 {
     this->nombre = nombre;
 
     this->edad = edad;
 
-    this->alergias.push_back(alergias);
-
-    this->tratamientosAnteriores.push_back(tratamientosAnteriores);
+    this->dentista = dentista;
 }
 
 void Paciente::imprimirPaciente()
@@ -39,6 +35,8 @@ void Paciente::imprimirPaciente()
     cout << "Nombre: " << nombre << endl;
     
     cout << "Edad: " << edad << endl;
+
+    cout << "Dentista: " << dentista.getDentista() << endl;
     
     cout << "Alergias: " << endl;
     for(int i = 0; i < alergias.size(); i++)

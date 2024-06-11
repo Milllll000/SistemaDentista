@@ -12,7 +12,10 @@
 
 int main(int argc, char const *argv[])
 {
-    // Si la prueba funciona, se imprimirá "Nombre: Jorge   Edad: 54    Alergias: Penicilina "
-    Paciente jorge("Jorge", 54, "Penicilina", "Extirpacion de muelas del juicio");
-    jorge.imprimirPaciente();
+    // Prueba de la clase Dentista
+    Dentista dentista;
+
+    dentista.agregarPaciente();
+    
+    return 0;
 }

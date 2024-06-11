@@ -28,8 +28,8 @@ class Paciente
 
     public:
     // Constructores para las clases
-    Paciente(string nombre, int edad, string alergias);
-    Paciente(string nombre, int edad, string alergias, string tratamientosAnteriores);
+    Paciente(string nombre, int edad);
+    Paciente(string nombre, int edad);
     // Función prueba de constructores
     void imprimirPaciente();
 };
