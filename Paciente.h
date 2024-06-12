@@ -20,15 +20,13 @@ class Paciente
     // Atributos privados
     private:
     string nombre;
-    int edad;
-    vector<string> tratamientosAnteriores;
-    vector<string> alergias;
+    string edad;
     vector<string> notasGenerales;
 
     public:
     // Constructores para las clases
     Paciente();
-    Paciente(string nombre, int edad);
+    Paciente(string nombre, string edad);
     // Función para imprimir un paciente
     void imprimirPaciente();
 };

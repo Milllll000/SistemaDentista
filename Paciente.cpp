@@ -15,11 +15,11 @@ using namespace std;
 
 Paciente::Paciente()
 {
-    
+
 }
 
 // Cuando es un paciente nuevo, se agrega el paciente
-Paciente::Paciente(string nombre, int edad)
+Paciente::Paciente(string nombre, string edad)
 {
     this->nombre = nombre;
 
@@ -29,6 +29,6 @@ Paciente::Paciente(string nombre, int edad)
 void Paciente::imprimirPaciente()
 {
     cout << "Nombre: " << nombre << endl;
-    
     cout << "Edad: " << edad << endl;
+    cout << "\n";
 }
