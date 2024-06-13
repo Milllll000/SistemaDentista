@@ -26,11 +26,12 @@ class Dentista
 
     public:
     Dentista();
-    void crearCita(Paciente paciente);
+    void crearCita(Paciente paciente, string tratamientoDental, string fechaDeCita);
     void setTratamientoDental(Cita cita, string tratamiento);
     void cancelarCita(Cita cita);
     void agregarPaciente();
     void imprimirPacientes();
+    vector<Paciente> getPacientes();
     void agregarNotasGenerales(Paciente paciente);
     void borrarPaciente(Paciente paciente);
 };

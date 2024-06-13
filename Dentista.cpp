@@ -18,9 +18,12 @@ Dentista::Dentista()
 
 }
 
-void Dentista::crearCita(Paciente paciente)
+void Dentista::crearCita(Paciente paciente, string tratamientoDental, string fechaDeCita)
 {
-
+    Cita cita(paciente, tratamientoDental, fechaDeCita);
+    citas.push_back(cita);
+    cout << "Cita creada." << endl;
+    cita.imprimirCita();
 }
 
 void Dentista::agregarPaciente()
@@ -66,8 +69,14 @@ void Dentista::imprimirPacientes()
     {
         for(int i = 0; i < pacientes.size(); i++)
         {
+                cout << "Indice " << to_string(i) << endl;
                 pacientes[i].imprimirPaciente();
         }
     cout << "\n";
     }
+}
+
+vector<Paciente> Dentista::getPacientes()
+{
+    return pacientes;
 }

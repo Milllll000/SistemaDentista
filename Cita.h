@@ -23,7 +23,9 @@ class Cita
 
     public:
     // Constructores
-    Cita(Paciente paciente, string tratamientoDental, string fecha);
-};
+    Cita(Paciente paciente, string tratamientoDental, string fechaDeCita);
 
+    // Métodos auxiliares
+    void imprimirCita();
+};
 #endif
