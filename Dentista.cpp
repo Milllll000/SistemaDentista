@@ -43,9 +43,17 @@ void Dentista::crearCita()
 
 void Dentista::imprimirCitas()
 {
-    for(int i = 0; i < citas.size(); i++)
+    if(citas.size() == 0)
     {
-        citas[i].imprimirCita();
+        cout << "No tiene citas agendadas. " << endl;
+    }
+
+    else
+    {
+        for(int i = 0; i < citas.size(); i++)
+        {
+            citas[i].imprimirCita();
+        }
     }
 }
 
