@@ -27,7 +27,7 @@ class Paciente
     // Constructores para las clases
     Paciente();
     Paciente(string nombre, string edad);
-    // Función para imprimir un paciente
+    // Métodos auxiliares
     void imprimirPaciente();
 };
 

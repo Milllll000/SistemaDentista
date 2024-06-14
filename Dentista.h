@@ -21,19 +21,23 @@ using namespace std;
 class Dentista
 {
     private:
+    // Atributos privados
     vector<Paciente> pacientes;
     vector<Cita> citas;
 
     public:
+    // Constructor por default
     Dentista();
+
+    // Métodos auxiliares
     void crearCita();
     void imprimirCitas();
     void cancelarCita(Cita cita);
     void agregarPaciente();
     void imprimirPacientes();
-    vector<Paciente> getPacientes();
     void agregarNotasGenerales(Paciente paciente);
     void borrarPaciente(Paciente paciente);
+    vector<Paciente> getPacientes();
 };
 
 #endif

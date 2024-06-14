@@ -13,6 +13,7 @@
 
 using namespace std;
 
+// Constructor para la una cita
 Cita::Cita(Paciente paciente, string tratamientoDental, string fechaDeCita)
 {
     this->paciente = paciente;
@@ -20,6 +21,7 @@ Cita::Cita(Paciente paciente, string tratamientoDental, string fechaDeCita)
     this->fechaDeCita = fechaDeCita;
 }
 
+// Muestra la información de una cita individual
 void Cita::imprimirCita()
 {
     cout << "Fecha de la cita: " << fechaDeCita << endl;

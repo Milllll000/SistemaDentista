@@ -26,9 +26,9 @@ Paciente::Paciente(string nombre, string edad)
     this->edad = edad;
 }
 
+// Formato para imprimir la información de un sólo paciente
 void Paciente::imprimirPaciente()
 {
     cout << "Nombre: " << nombre << endl;
     cout << "Edad: " << edad << endl;
-    cout << "\n";
 }
