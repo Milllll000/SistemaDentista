@@ -1,5 +1,5 @@
 /**
- * Prueba de la clase Paciente
+ * Prueba de todas las clases y funciones en el programa SistemaDeCitas.exe
  * 
  * Autor: Allan Mauricio Brenes castro
  * 
@@ -70,7 +70,14 @@ int main(int argc, char const *argv[])
      * Como son los mismos datos que el caso de prueba anterior, se deberá de 
      * mostrar en pantalla datos similares.
     */
-    dentista.crearCita(pacientes[0], "Extirpación de muelas del juicio", "13/06/2024");
+    dentista.crearCita();
 
     return 0;
+
+    /**
+     * La siguiente función muestra todas las citas del dentista.
+     * Si no hay citas, mostrará en pantalla "No tiene citas agendadas."
+     * Si hay citas, se imprimirá una por una junto con sus datos relacionados
+    */
+   dentista.imprimirCitas();
 }
