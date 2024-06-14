@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
         cout << "Para agendar una cita, ingrese \"agendar\"" << endl;
         cout << "Para revisar los datos de un paciente, ingrese \"datos\"" << endl;
         cout << "Para agregar una nota a un paciente, ingrese \"nota\"" << endl;
-        cout << "Para cerrar la aplicación, ingrese \"cerrar\"" << endl;
+        cout << "Para cerrar el programa, ingrese \"cerrar\"" << endl;
         getline(cin, input);
         if(input == "pacientes")
         {
@@ -51,7 +51,7 @@ int main(int argc, char const *argv[])
         }
         if(input == "agendar")
         {
-            
+            dentista.crearCita();
         }
         if(input == "datos")
         {
@@ -62,4 +62,6 @@ int main(int argc, char const *argv[])
             
         }
     } while(input != "cerrar");
+
+    return 0;
 }

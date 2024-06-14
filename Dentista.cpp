@@ -18,12 +18,35 @@ Dentista::Dentista()
 
 }
 
-void Dentista::crearCita(Paciente paciente, string tratamientoDental, string fechaDeCita)
+void Dentista::crearCita()
 {
-    Cita cita(paciente, tratamientoDental, fechaDeCita);
+    string input;
+    int indice;
+    Paciente pacienteSeleccionado;
+    cout << "Ingrese el num de indice del paciente: " << endl;
+    imprimirPacientes();
+    getline(cin, input);
+    indice = stoi(input);
+    pacienteSeleccionado = getPacientes()[indice];
+
+    string tratamientoDental;
+    string fechaDeCita;
+    cout << "Ingrese el tratamiento a realizar: ";
+    getline(cin, tratamientoDental);
+    cout << "Ingrese la fecha de la cita: ";
+    getline(cin, fechaDeCita);
+    Cita cita(pacienteSeleccionado, tratamientoDental, fechaDeCita);
     citas.push_back(cita);
     cout << "Cita creada." << endl;
     cita.imprimirCita();
+}
+
+void Dentista::imprimirCitas()
+{
+    for(int i = 0; i < citas.size(); i++)
+    {
+        citas[i].imprimirCita();
+    }
 }
 
 void Dentista::agregarPaciente()

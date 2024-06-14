@@ -26,8 +26,8 @@ class Dentista
 
     public:
     Dentista();
-    void crearCita(Paciente paciente, string tratamientoDental, string fechaDeCita);
-    void setTratamientoDental(Cita cita, string tratamiento);
+    void crearCita();
+    void imprimirCitas();
     void cancelarCita(Cita cita);
     void agregarPaciente();
     void imprimirPacientes();
