@@ -32,3 +32,8 @@ void Paciente::imprimirPaciente()
     cout << "Nombre: " << nombre << endl;
     cout << "Edad: " << edad << endl;
 }
+
+vector<Nota> Paciente::getNotasGenerales()
+{
+    return notasGenerales;
+}

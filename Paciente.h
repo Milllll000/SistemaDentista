@@ -10,6 +10,8 @@
 #ifndef _Paciente_h
 #define _Paciente_h
 
+#include "Nota.h"
+
 #include <string>
 #include <vector>
 
@@ -21,7 +23,7 @@ class Paciente
     private:
     string nombre;
     string edad;
-    vector<string> notasGenerales;
+    vector<Nota> notasGenerales;
 
     public:
     // Constructores para las clases
@@ -29,6 +31,7 @@ class Paciente
     Paciente(string nombre, string edad);
     // Métodos auxiliares
     void imprimirPaciente();
+    vector<Nota> getNotasGenerales();
 };
 
 #endif

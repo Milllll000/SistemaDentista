@@ -10,9 +10,9 @@
 #ifndef _Nota_h
 #define _Nota_h
 
-#include "Paciente.h"
-
 #include <string>
+
+using namespace std;
 
 class Nota
 {
@@ -22,8 +22,8 @@ class Nota
 
     public:
     Nota();
-    Nota( string nota, string fecha);
-    void crearNota( string nota, string fecha);
+    Nota(string nota, string fechaDeNota);
+    void imprimirNota();
 };
 
 

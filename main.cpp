@@ -29,15 +29,15 @@ int main(int argc, char const *argv[])
         cout << "Para agregar uno o varios pacientes a su lista, ingrese \"agregar\"" << endl;
         cout << "Para revisar sus citas, ingrese \"citas\"" << endl;
         cout << "Para agendar una cita, ingrese \"agendar\"" << endl;
-        cout << "Para revisar los datos de un paciente, ingrese \"datos\"" << endl;
-        cout << "Para agregar una nota a un paciente, ingrese \"nota\"" << endl;
+        cout << "Para agregar una nota sobre un paciente, ingrese \"anotar\"" << endl;
+        cout << "Para ver las notas sobre un paciente, ingrese \"notas\"" << endl;
         cout << "Para cerrar el programa, ingrese \"cerrar\"" << endl;
         getline(cin, input);
         if(input == "pacientes")
         {
-            cout << "\n";
-            dentista.imprimirPacientes();
-            cout << "\n\n";
+                cout << "\n";
+                dentista.imprimirPacientes();
+                cout << "\n\n";
         }
         if(input == "agregar")
         {
@@ -47,19 +47,21 @@ int main(int argc, char const *argv[])
         }
         if(input == "citas")
         {
-            
+            cout << "\n";
+            dentista.imprimirCitas();
+            cout << "\n\n";
         }
         if(input == "agendar")
         {
+            cout << "\n";
             dentista.crearCita();
+            cout << "\n\n";
         }
-        if(input == "datos")
-        {
-            
-        }
-        if(input == "nota")
-        {
-            
+        if(input == "anotar")
+        {   
+            cout << "\n";
+            dentista.agregarNotasGenerales();
+            cout << "\n\n";
         }
     } while(input != "cerrar");
 

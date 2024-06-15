@@ -20,8 +20,8 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    // Prueba de la clase Dentista
-    Dentista dentista;
+     // Prueba de la clase Dentista
+     Dentista dentista;
 
     /**
      * El valor por default es que no hayan pacientes. Si es que no hay pacientes, se
@@ -80,4 +80,16 @@ int main(int argc, char const *argv[])
      * Si hay citas, se imprimirá una por una junto con sus datos relacionados
     */
    dentista.imprimirCitas();
+
+   /**
+    * El método seleccionarPaciente() regresa un paciente individual
+    * para su uso cuando se le pregunta al usuario cuál desea.
+    * Si está bien implementada, al usar el método imprimirPaciente() se desplegarán
+    * sus datos.
+   */
+   cout << "\nSeleccionarPaciente()" << endl;
+   Paciente pacienteSeleccionado = dentista.seleccionarPaciente();
+   pacienteSeleccionado.imprimirPaciente();
+
+   return 0;
 }

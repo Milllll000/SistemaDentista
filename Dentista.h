@@ -12,6 +12,7 @@
 
 #include "Cita.h"
 #include "Paciente.h"
+#include "Nota.h"
 
 #include <string>
 #include <vector>
@@ -31,12 +32,12 @@ class Dentista
 
     // Métodos auxiliares
     void crearCita();
+    void imprimirNotas();
     void imprimirCitas();
-    void cancelarCita(Cita cita);
     void agregarPaciente();
     void imprimirPacientes();
-    void agregarNotasGenerales(Paciente paciente);
-    void borrarPaciente(Paciente paciente);
+    void agregarNotasGenerales();
+    Paciente seleccionarPaciente();
     vector<Paciente> getPacientes();
 };
 

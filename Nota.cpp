@@ -10,18 +10,23 @@
 #include "Nota.h"
 
 #include <string>
+#include <iostream>
+
+using namespace std;
 
 Nota::Nota()
 {
 
 }
 
-Nota::Nota(string nota, string fecha)
+Nota::Nota(string nota, string fechaDeNota)
 {
-
+    this->nota = nota;
+    this->fechaDeNota = fechaDeNota;
 }
 
-void Nota::crearNota(string nota, string fecha)
+void Nota::imprimirNota()
 {
-    
+    cout << "Fecha: " << fechaDeNota << endl;
+    cout << nota << endl;
 }
